@@ -1,0 +1,151 @@
+@model WebApplication2.Models.ViewModels.MalumotViewModels
+<div class="bg-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-0"><a asp-action="BoshSahifa" asp-controller="Home">Home</a> <span class="mx-2 mb-0">/</span> <a
+                        asp-action="Xarid" asp-controller="Home">Store</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">@Model.Product?.Name, @Model.Product?.Stock</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mr-auto">
+                    <div class="border text-center">
+                        <img src="~/images/@if (Model.Product != null) { @Model.Product.ImageUrl }" alt="Image" class="img-fluid p-5">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-black">@Model.Product?.Name, @Model.Product?.Stock</h2>
+                    <p>@Model.Product?.Description</p>
+
+                    @if (Model.Product?.OldPrice != null)
+                    {
+                        <p>
+                            <del>$@Model.Product.OldPrice</del>
+                            <strong class="text-primary h4">$@Model.Product.Price</strong>
+                        </p>
+                    }
+                    else
+                    {
+                        <p>
+                            <strong class="text-primary h4">$@Model.Product?.Price</strong>
+                        </p>
+                    }
+
+                    <form asp-action="AddToCart" asp-controller="Home" method="post">
+                        <input type="hidden" name="productId" value="@Model.Product.Id" /> 
+                        <div class="input-group mb-3" style="max-width: 220px;">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-primary js-btn-minus" type="button" onclick="changeQuantity(-1)">−</button>
+                            </div>
+                            <input type="text" name="quantity" class="form-control text-center" value="1" id="quantityInput" />
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary js-btn-plus" type="button" onclick="changeQuantity(1)">+</button>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add To Cart</button>
+                    </form>
+                    <script>
+                        function changeQuantity(change) {
+                            var input = document.getElementById("quantityInput");
+                            var value = parseInt(input.value) || 1;
+                            value += change;
+                            if (value < 1) value = 1;
+                            input.value = value;
+                        }
+                    </script>
+
+
+                    <div class="mt-5">
+                        <ul class="nav nav-pills mb-3 custom-pill" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                                   aria-controls="pills-home" aria-selected="true">Ordering Information</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                                   aria-controls="pills-profile" aria-selected="false">Specifications</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <table class="table custom-table">
+                                    <thead>
+                                    <tr>
+                                        <th>Material</th>
+                                        <th>Description</th>
+                                        <th>Packaging</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    @{
+                                        System.Diagnostics.Debug.Assert(Model.Product != null, "Model.Product != null");
+                                    }
+                                    @foreach (var packaging in Model.Product.Packagings)
+                                    {
+                                        <tr>
+                                            <th scope="row">@packaging.MaterialCode</th>
+                                            <td>@packaging.Description</td>
+                                            <td>@packaging.Type</td>
+                                        </tr>
+                                    }
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Specification Table -->
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <table class="table custom-table">
+                                    <tbody>
+                                    @{
+                                        System.Diagnostics.Debug.Assert(Model.Product != null, "Model.Product != null");
+                                    }
+                                    @foreach (var spec in Model.Product.Specifications)
+                                    {
+                                        <tr>
+                                            <td>@spec.Key</td>
+                                            <td class="bg-light">@spec.Value</td>
+                                        </tr>
+                                    }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section bg-secondary bg-image" style="background-image: url('/images/bg_2.jpg');">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('/images/bg_1.jpg');">
+                        <div class="banner-1-inner align-self-center">
+                            <h2>Pharma Products</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('/images/bg_2.jpg');">
+                        <div class="banner-1-inner ml-auto  align-self-center">
+                            <h2>Rated by Experts</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+

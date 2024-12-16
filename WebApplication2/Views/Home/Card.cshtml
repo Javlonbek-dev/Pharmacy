@@ -1,0 +1,122 @@
+@model WebApplication2.Models.ViewModels.MalumotViewModels
+
+<div class="site-section">
+        <div class="container">
+            <div class="row mb-5">
+                <form class="col-md-12" method="post" asp-action="UpdateCart" asp-controller="Home">
+                    <div class="site-blocks-table">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="product-thumbnail">Image</th>
+                                <th class="product-name">Product</th>
+                                <th class="product-price">Price</th>
+                                <th class="product-quantity">Quantity</th>
+                                <th class="product-total">Total</th>
+                                <th class="product-remove">Remove</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @for (int i = 0; i < Model.CartItems.Count; i++)
+                            {
+                                <tr>
+                                    <td class="product-thumbnail">
+                                        <img src="~/images/@Model.CartItems[i].Product.ImageUrl" style="width: 100px" alt="Image" class="img-fluid">
+                                    </td>
+                                    <td class="product-name">
+                                        <h2 class="h5 text-black">@Model.CartItems[i].Product.Name</h2>
+                                    </td>
+                                    <td>$@Model.CartItems[i].Product.Price</td>
+                                    <td>
+                                        <input type="hidden" name="cartIds" value="@Model.CartItems[i].Id" />
+                                        <input type="number" name="quantities" value="@Model.CartItems[i].Quantity" class="form-control text-center" min="1" />
+                                    </td>
+                                    <td>$@((Model.CartItems[i].Product.Price * Model.CartItems[i].Quantity))</td>
+                                    <td>
+                                        <a href="@Url.Action("RemoveFromCart", "Home", new { id = Model.CartItems[i].Id })"
+                                           class="btn btn-primary height-auto btn-sm">X</a>
+                                    </td>
+                                </tr>
+                            }                          
+                            </tbody>
+                        </table>
+                        <button type="submit" class="btn btn-primary btn-md btn-block">Update Cart</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 pl-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-12 text-right border-bottom mb-5">
+                                    <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <span class="text-black">Original Total Price</span>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <strong class="text-black">$@Model.Subtotal</strong>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-md-6">
+                                    <span class="text-black">With Sale Total Price</span>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <strong class="text-black">$@Model.Total</strong>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form method="post" asp-action="ProceedToCheckout" asp-controller="Home">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Proceed To Checkout</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="site-section bg-secondary bg-image" style="background-image: url('/images/bg_2.jpg');">
+    <div class="container">
+        <div class="row align-items-stretch">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('/images/bg_1.jpg');">
+                    <div class="banner-1-inner align-self-center">
+                        <h2>Pharma Products</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('/images/bg_2.jpg');">
+                    <div class="banner-1-inner ml-auto  align-self-center">
+                        <h2>Rated by Experts</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function changeQuantity(change) {
+        var input = document.getElementById("quantityInput");
+        var value = parseInt(input.value) || 1;
+        value += change;
+        if (value < 1) value = 1;
+        input.value = value;
+    }
+</script>
+

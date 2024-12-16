@@ -1,0 +1,106 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using X.PagedList.Mvc.Core
+@model WebApplication2.Models.ViewModels.MalumotViewModels
+    <div class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Store</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+
+        <form method="get" asp-action="Xarid" asp-controller="Home">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="mb-3 h6 text-uppercase text-black d-block">Filter by Price</h3>
+              <input type="number" name="minPrice" class="form-control mb-2" placeholder="Min Price" />
+              <input type="number" name="maxPrice" class="form-control mb-2" placeholder="Max Price" />
+            </div>
+
+            <div class="col-lg-6">
+              <h3 class="mb-3 h6 text-uppercase text-black d-block">Filter by Reference</h3>
+              <select name="sortOrder" class="form-control">
+                <option value="">Relevance</option>
+                <option value="name_asc">Name, A to Z</option>
+                <option value="name_desc">Name, Z to A</option>
+                <option value="price_low_high">Price, low to high</option>
+                <option value="price_high_low">Price, high to low</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Apply Filters</button>
+        </form>
+
+
+        <div class="row">
+          @foreach (var product in Model.ProductPagedList)
+          {
+            <div class="col-sm-6 col-lg-4 text-center item mb-4">
+              @if (product.OldPrice != null && product.OldPrice > product.Price)
+              {
+                var discount = (int)(((product.OldPrice - product.Price) / product.OldPrice) * 100);
+               
+                  <span class="tag">Sale @discount %</span>
+              }
+              else
+              {
+              }
+              <a asp-action="MahsulotShow" asp-controller="Home" asp-route-id="@product.Id">
+                <img src="~/images/@product.ImageUrl" alt="Image">
+              </a>
+              <h3 class="text-dark">
+                <a asp-action="MahsulotShow" asp-controller="Home" asp-route-id="@product.Id">@product.Name</a>
+              </h3>
+
+              @if (product.OldPrice != null )
+              {
+                <p class="price">
+                  <del>$@product.OldPrice</del> &mdash; $@product.Price
+                </p>
+              }
+              else
+              {
+                <p class="price">$@product.Price</p>
+              }
+            </div>
+          }
+        </div>
+
+        <div class="row mt-5 text-center">
+          <div class="col-md-12 text-center">
+            <div class="site-block-27">
+              @Html.PagedListPager(Model.ProductPagedList, page => Url.Action("Xarid", new { page }))
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+    
+    <div class="site-section bg-secondary bg-image" style="background-image: url('/images/bg_2.jpg');">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('/images/bg_1.jpg');">
+              <div class="banner-1-inner align-self-center">
+                <h2>Pharma Products</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('/images/bg_2.jpg');">
+              <div class="banner-1-inner ml-auto  align-self-center">
+                <h2>Rated by Experts</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+

@@ -1,0 +1,585 @@
+{
+  "Files": [
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/css/aos.css",
+      "PackagePath": "staticwebassets/css/aos.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/css/bootstrap/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap-grid.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/css/bootstrap/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/css/bootstrap/bootstrap.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/css/jquery-ui.css",
+      "PackagePath": "staticwebassets/css/jquery-ui.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/css/magnific-popup.css",
+      "PackagePath": "staticwebassets/css/magnific-popup.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/css/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/css/owl.carousel.min.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/css/owl.theme.default.min.css",
+      "PackagePath": "staticwebassets/css/owl.theme.default.min.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/fonts/icomoon/Read Me.txt",
+      "PackagePath": "staticwebassets/fonts/icomoon/Read Me.txt"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/fonts/icomoon/demo-files/demo.css",
+      "PackagePath": "staticwebassets/fonts/icomoon/demo-files/demo.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/fonts/icomoon/demo-files/demo.js",
+      "PackagePath": "staticwebassets/fonts/icomoon/demo-files/demo.js"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/fonts/icomoon/demo.html",
+      "PackagePath": "staticwebassets/fonts/icomoon/demo.html"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/fonts/icomoon/fonts/icomoon.eot",
+      "PackagePath": "staticwebassets/fonts/icomoon/fonts/icomoon.eot"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/fonts/icomoon/fonts/icomoon.svg",
+      "PackagePath": "staticwebassets/fonts/icomoon/fonts/icomoon.svg"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/fonts/icomoon/fonts/icomoon.ttf",
+      "PackagePath": "staticwebassets/fonts/icomoon/fonts/icomoon.ttf"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/fonts/icomoon/fonts/icomoon.woff",
+      "PackagePath": "staticwebassets/fonts/icomoon/fonts/icomoon.woff"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/fonts/icomoon/selection.json",
+      "PackagePath": "staticwebassets/fonts/icomoon/selection.json"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/fonts/icomoon/style.css",
+      "PackagePath": "staticwebassets/fonts/icomoon/style.css"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/.DS_Store",
+      "PackagePath": "staticwebassets/images/.DS_Store"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/bg_1.jpg",
+      "PackagePath": "staticwebassets/images/bg_1.jpg"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/bg_2.jpg",
+      "PackagePath": "staticwebassets/images/bg_2.jpg"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/hero_1.jpg",
+      "PackagePath": "staticwebassets/images/hero_1.jpg"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/person_1.jpg",
+      "PackagePath": "staticwebassets/images/person_1.jpg"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/person_2.jpg",
+      "PackagePath": "staticwebassets/images/person_2.jpg"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/person_3.jpg",
+      "PackagePath": "staticwebassets/images/person_3.jpg"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/person_4.jpg",
+      "PackagePath": "staticwebassets/images/person_4.jpg"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/person_5.jpg",
+      "PackagePath": "staticwebassets/images/person_5.jpg"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/product_01.png",
+      "PackagePath": "staticwebassets/images/product_01.png"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/product_02.png",
+      "PackagePath": "staticwebassets/images/product_02.png"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/product_03.png",
+      "PackagePath": "staticwebassets/images/product_03.png"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/product_04.png",
+      "PackagePath": "staticwebassets/images/product_04.png"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/product_05.png",
+      "PackagePath": "staticwebassets/images/product_05.png"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/product_06.png",
+      "PackagePath": "staticwebassets/images/product_06.png"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/product_07_large.png",
+      "PackagePath": "staticwebassets/images/product_07_large.png"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/products_1.png",
+      "PackagePath": "staticwebassets/images/products_1.png"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/shoe.png",
+      "PackagePath": "staticwebassets/images/shoe.png"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/wave.svg",
+      "PackagePath": "staticwebassets/images/wave.svg"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/images/women.jpg",
+      "PackagePath": "staticwebassets/images/women.jpg"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/js/aos.js",
+      "PackagePath": "staticwebassets/js/aos.js"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/js/jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets/js/jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/js/jquery-ui.js",
+      "PackagePath": "staticwebassets/js/jquery-ui.js"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/js/jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets/js/jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/js/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/js/owl.carousel.min.js"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/js/popper.min.js",
+      "PackagePath": "staticwebassets/js/popper.min.js"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/js/slick.min.js",
+      "PackagePath": "staticwebassets/js/slick.min.js"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/.DS_Store",
+      "PackagePath": "staticwebassets/scss/.DS_Store"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/_site-base.scss",
+      "PackagePath": "staticwebassets/scss/_site-base.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/_site-blocks.scss",
+      "PackagePath": "staticwebassets/scss/_site-blocks.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/_site-navbar.scss",
+      "PackagePath": "staticwebassets/scss/_site-navbar.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/.DS_Store",
+      "PackagePath": "staticwebassets/scss/bootstrap/.DS_Store"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_alert.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_alert.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_badge.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_badge.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_breadcrumb.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_breadcrumb.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_button-group.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_button-group.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_buttons.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_buttons.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_card.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_card.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_carousel.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_carousel.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_close.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_close.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_code.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_code.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_custom-forms.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_custom-forms.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_dropdown.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_dropdown.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_forms.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_forms.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_functions.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_functions.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_grid.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_grid.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_images.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_images.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_input-group.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_input-group.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_jumbotron.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_jumbotron.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_list-group.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_list-group.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_media.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_media.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_mixins.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_mixins.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_modal.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_modal.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_nav.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_nav.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_navbar.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_navbar.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_pagination.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_pagination.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_popover.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_popover.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_print.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_print.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_progress.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_progress.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_reboot.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_reboot.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_root.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_root.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_tables.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_tables.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_tooltip.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_tooltip.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_transitions.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_transitions.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_type.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_type.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_utilities.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_utilities.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/_variables.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/_variables.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/bootstrap-grid.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/bootstrap-grid.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/bootstrap-reboot.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/bootstrap.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/bootstrap.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_alert.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_alert.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_background-variant.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_background-variant.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_badge.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_badge.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_border-radius.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_border-radius.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_box-shadow.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_box-shadow.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_breakpoints.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_breakpoints.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_buttons.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_buttons.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_caret.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_caret.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_clearfix.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_clearfix.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_float.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_float.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_forms.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_forms.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_gradients.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_gradients.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_grid-framework.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_grid-framework.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_grid.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_grid.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_hover.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_hover.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_image.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_image.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_list-group.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_list-group.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_lists.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_lists.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_nav-divider.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_nav-divider.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_pagination.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_pagination.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_reset-text.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_reset-text.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_resize.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_resize.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_screen-reader.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_screen-reader.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_size.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_size.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_table-row.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_table-row.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_text-emphasis.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_text-emphasis.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_text-hide.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_text-hide.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_text-truncate.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_text-truncate.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_transition.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_transition.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/mixins/_visibility.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/mixins/_visibility.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_align.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_align.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_background.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_background.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_borders.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_borders.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_clearfix.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_clearfix.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_display.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_display.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_embed.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_embed.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_flex.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_flex.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_float.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_float.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_position.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_position.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_screenreaders.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_screenreaders.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_shadows.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_shadows.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_sizing.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_sizing.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_spacing.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_spacing.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_text.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_text.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/bootstrap/utilities/_visibility.scss",
+      "PackagePath": "staticwebassets/scss/bootstrap/utilities/_visibility.scss"
+    },
+    {
+      "Id": "/home/javlon/RiderProjects/WebApplication2/WebApplication2/wwwroot/scss/style.scss",
+      "PackagePath": "staticwebassets/scss/style.scss"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WebApplication2.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WebApplication2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.WebApplication2.props",
+      "PackagePath": "build\\WebApplication2.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.WebApplication2.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication2.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.WebApplication2.props",
+      "PackagePath": "buildTransitive\\WebApplication2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
