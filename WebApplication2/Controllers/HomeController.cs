@@ -17,7 +17,7 @@ public class HomeController : Controller
     {
         db = _context;
     }
-
+    
     public IActionResult BoshSahifa()
     {
         var products = db.Products.ToList();
@@ -47,7 +47,7 @@ public class HomeController : Controller
             .Include(c => c.Product)
             .Where(c => c.UserId == userId)
             .ToList();
-
+        var count = cartItems.Count;
         var subtotal = cartItems.Sum(c => (c.Product.OldPrice ?? 0) * c.Quantity);
         var total = cartItems.Sum(c => (c.Product.Price) * c.Quantity);
 
@@ -55,7 +55,8 @@ public class HomeController : Controller
         {
             CartItems = cartItems,
             Subtotal = subtotal,
-            Total = total
+            Total = total,
+            CartItemCount= count
         };
 
         return View(malumot);
@@ -66,6 +67,22 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpPost]
+    public IActionResult Contact(MalumotViewModels malumot)
+    {
+        var model1 = new Contact
+        {
+            First_Name = malumot.Contact.First_Name,
+            Last_Name = malumot.Contact.Last_Name,
+            Email = malumot.Contact.Email,
+            Subject = malumot.Contact.Subject,
+            Message = malumot.Contact.Message
+        };
+        db.Contacts.Add(model1);
+        db.SaveChanges();
+            
+        return RedirectToAction("ThankYou", "Home");
+    }
     public IActionResult Haqida()
     {
         var team = db.Users

@@ -16,6 +16,8 @@ public class MalumotViewModels
     public List<Cart> CartItems { get; set; }
     public float Subtotal { get; set; }
     public float Total { get; set; }
-    public List<Order> Orders { get; set; }
-    public List<User> Users { get; set; }
+    public List<Order>? Orders { get; set; }
+    public List<User>? Users { get; set; }
+    public Contact? Contact { get; set; }
+    public int CartItemCount { get; set; }
 }

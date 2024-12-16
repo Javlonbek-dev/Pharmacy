@@ -87,7 +87,7 @@
           <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
           <a asp-action="Card" asp-controller="Home" class="icons-btn d-inline-block bag">
             <span class="icon-shopping-bag"></span>
-            <span class="number">2</span>
+            <span class="number">@Model.CartItemCount</span>
           </a>
           <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
                                                                                               class="icon-menu"></span></a>
@@ -97,7 +97,29 @@
   </div>
 
   @RenderBody();
-  
+  <div class="site-section bg-secondary bg-image" style="background-image: url('/images/bg_2.jpg');">
+    <div class="container">
+      <div class="row align-items-stretch">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('/images/bg_1.jpg');">
+            <div class="banner-1-inner align-self-center">
+              <h2>Pharma Products</h2>
+              <p>We offer a wide range of high-quality pharmaceutical products, including antibiotics, pain relievers, and wellness supplements designed to meet international healthcare standards.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('/images/bg_2.jpg');">
+            <div class="banner-1-inner ml-auto  align-self-center">
+              <h2>Rated by Experts</h2>
+              <p>Over 500+ industry experts have rated our product as the best in its category for 2024.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="site-footer">
     <div class="container">
       <div class="row">
