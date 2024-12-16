@@ -8,6 +8,8 @@ public class Product
     public float Price { get; set; }
     public float? OldPrice { get; set; }
     public int Stock { get; set; }
+    public string Quantity { get; set; }
+    
     public int CategoryId { get; set; }
     public Category Category { get; set; }
     public string ImageUrl { get; set; }
