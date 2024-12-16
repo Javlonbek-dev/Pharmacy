@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using X.PagedList;
 
 namespace WebApplication2.Models.ViewModels;
@@ -16,4 +17,5 @@ public class MalumotViewModels
     public float Subtotal { get; set; }
     public float Total { get; set; }
     public List<Order> Orders { get; set; }
+    public List<User> Users { get; set; }
 }

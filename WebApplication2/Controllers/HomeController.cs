@@ -68,7 +68,18 @@ public class HomeController : Controller
 
     public IActionResult Haqida()
     {
-        return View();
+        var team = db.Users
+            .Where(t => t.Role == "Team")
+            .Take(4)
+            .ToList();
+           
+
+        MalumotViewModels malumot = new()
+        {
+            Users = team
+        };
+        
+        return View(malumot);
     }
 
     public IActionResult MahsulotShow(int id)
