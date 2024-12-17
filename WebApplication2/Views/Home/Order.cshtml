@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-12 mb-0">
           <a asp-action="BoshSahifa" asp-controller="Home">Home</a> <span class="mx-2 mb-0">/</span>
-            <strong class="text-black">Checkout</strong>
+            <strong class="text-black">Tekshiruv</strong>
           </div>
         </div>
       </div>
@@ -22,9 +22,9 @@
         </div>
         <div class="row">
           <div class="col-md-6 mb-5 mb-md-0">
-            <form method="post" asp-action="PlaceOrder" asp-controller="Home">
+            <form id="orderForm" method="post" asp-action="PlaceOrder" asp-controller="Home">
               <div class="p-3 p-lg-5 border">
-                <h2 class="h3 mb-3 text-black">Billing Details</h2>
+                <h2 class="h3 mb-3 text-black">Hisob-kitob tafsilotlari</h2>
 
                 <div class="form-group">
                   <label for="c_payment_method" class="text-black">Payment Method <span class="text-danger">*</span></label>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="c_transaction_id" class="text-black">Transaction ID</label>
+                  <label for="c_transaction_id" class="text-black">Tranzaksiya ID</label>
                   <input type="text" class="form-control" id="c_transaction_id" name="TransactionId" placeholder="Enter Transaction ID">
                 </div>
               </div>
@@ -47,14 +47,14 @@
             
             <div class="row mb-5">
               <div class="col-md-12">
-                <h2 class="h3 mb-3 text-black">Your Order</h2>
+                <h2 class="h3 mb-3 text-black">Sizning buyurtmangiz</h2>
                 <div class="p-3 p-lg-5 border">
 
                   <table class="table site-block-order-table mb-5">
                     <thead>
                     <tr>
-                      <th>Product</th>
-                      <th>Total</th>
+                      <th>Mahsulot</th>
+                      <th>Jami Narxi</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -80,8 +80,7 @@
     
                     <div class="collapse" id="collapsebank">
                       <div class="py-2 px-4">
-                        <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the
-                          payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                        <p class="mb-0">To'lovni to'g'ridan-to'g'ri bank hisobimizga o'tkazing. Toʻlov maʼlumotnomasi sifatida Buyurtma identifikatoridan foydalaning. Bizning hisobimizdagi mablag'lar o'chirilmaguncha buyurtmangiz yuborilmaydi.</p>
                       </div>
                     </div>
                   </div>
@@ -92,8 +91,7 @@
     
                     <div class="collapse" id="collapsecheque">
                       <div class="py-2 px-4">
-                        <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the
-                          payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                        <p class="mb-0">To'lovni to'g'ridan-to'g'ri Elektron Karta hisobimizga o'tkazing. Toʻlov maʼlumotnomasi sifatida Buyurtma identifikatoridan foydalaning. Bizning hisobimizdagi mablag'lar o'chirilmaguncha buyurtmangiz yuborilmaydi.</p>
                       </div>
                     </div>
                   </div>
@@ -104,18 +102,14 @@
     
                     <div class="collapse" id="collapsepaypal">
                       <div class="py-2 px-4">
-                        <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the
-                          payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                        <p class="mb-0">To'lovni to'g'ridan-to'g'ri Paypal  hisobimizga o'tkazing. Toʻlov maʼlumotnomasi sifatida Buyurtma identifikatoridan foydalaning. Bizning hisobimizdagi mablag'lar o'chirilmaguncha buyurtmangiz yuborilmaydi.</p>
                       </div>
                     </div>
                   </div>
-    
+
                   <div class="form-group">
-                    <a asp-action="PlaceOrder" asp-controller="Home"> <button type="submit" class="btn btn-primary btn-lg btn-block" >Place
-                      Order</button>
-                    </a>
+                    <button id="placeOrderBtn" class="btn btn-primary btn-lg btn-block">PLACE ORDER</button>
                   </div>
-    
                 </div>
               </div>
             </div>
@@ -124,6 +118,11 @@
         </div>
       </div>
     </div>
-    
 
+
+<script>
+  document.getElementById("placeOrderBtn").addEventListener("click", function () {
+    document.getElementById("orderForm").submit(); 
+  });
+</script>
 

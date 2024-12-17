@@ -64,8 +64,14 @@ public class HomeController : Controller
 
     public IActionResult Contact()
     {
-        return View();
+        var viewModel = new MalumotViewModels
+        {
+            Contact = new Contact() 
+        };
+
+        return View(viewModel);
     }
+
 
     [HttpPost]
     public IActionResult Contact(MalumotViewModels malumot)
@@ -119,16 +125,21 @@ public class HomeController : Controller
         return View(malumot);
     }
 
-    public IActionResult Xarid(int? page, float? minPrice, float? maxPrice, string sortOrder)
+    public IActionResult Xarid(int? page, float? minPrice, float? maxPrice, string sortOrder, int categoryId)
     {
         int pageSize = 9;
         int pageNumber = page ?? 1;
 
         var products = db.Products.AsQueryable();
-
+        var category = db.Categories.AsQueryable();
+        
         if (minPrice != null && maxPrice != null)
         {
             products = products.Where(p => p.Price >= minPrice && p.Price <= maxPrice);
+        }
+        if (categoryId != null)
+        {
+            products = products.Where(p => p.CategoryId == categoryId);
         }
 
         switch (sortOrder)
@@ -155,10 +166,13 @@ public class HomeController : Controller
         ViewBag.MinPrice = minPrice;
         ViewBag.MaxPrice = maxPrice;
         ViewBag.SortOrder = sortOrder;
+        ViewBag.CategoryId = categoryId;
 
         MalumotViewModels model = new()
         {
-            ProductPagedList = pagedProducts
+            ProductPagedList = pagedProducts,
+            Categories = db.Categories.ToList() 
+
         };
 
         return View(model);
@@ -239,7 +253,7 @@ public class HomeController : Controller
         int userId = 1; 
         var orders = db.Orders
             .Include(o => o.Product)
-            .Where(o => o.UserId == userId)
+            .Where(o => o.UserId == userId && o.IsDeleted == false)
             .ToList();
 
         var total = orders.Sum(o => o.TotalPrice);
@@ -292,61 +306,42 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult PlaceOrder(string PaymentMethod, string TransactionId)
     {
-        int userId = 1;
+            int userId = 1;
 
-        var oldOrders = db.Orders.Where(o => o.UserId == userId).ToList();
-        if (oldOrders.Any())
-        {
-            db.Orders.RemoveRange(oldOrders);
-            db.SaveChanges();
-        }
+            var oldOrders = db.Orders
+                .Where(o => o.UserId == userId && !o.IsDeleted)
+                .ToList();
 
-        var cartItems = db.Carts
-            .Include(c => c.Product)
-            .Where(c => c.UserId == userId)
-            .ToList();
-
-        if (!cartItems.Any() || string.IsNullOrWhiteSpace(PaymentMethod))
-        {
-            ModelState.AddModelError("", "Please fill in all billing details and select products.");
-            return View("Order", new MalumotViewModels
+            if (!oldOrders.Any())
             {
-                Orders = oldOrders,
-                Total = oldOrders.Sum(o => o.TotalPrice)
-            });
-        }
+                ModelState.AddModelError("", "Hech qanday buyurtma topilmadi.");
+                return View("Order");
+            }
 
-        foreach (var cart in cartItems)
-        {
-            var newOrder = new Order
+            var orderToPay = oldOrders.FirstOrDefault();
+            
+            var payment = new Payment
             {
-                UserId = userId,
-                ProductId = cart.ProductId,
-                Quantity = cart.Quantity,
-                TotalPrice = cart.Product.Price * cart.Quantity,
+                OrderId = orderToPay.Id, 
+                PaymentMethod = PaymentMethod,
+                TransactionId = TransactionId,
+                PaymentStatus = "Pending",
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
-            db.Orders.Add(newOrder);
+            db.Payments.Add(payment);
+            db.SaveChanges();
+            
+            foreach (var order in oldOrders)
+            {
+                order.IsDeleted = true;
+                order.DeletedAt = DateTime.UtcNow;
+            }
+
+            db.SaveChanges();
+
+            return RedirectToAction("ThankYou", "Home");
         }
-
-        var payment = new Payment
-        {
-            OrderId = 0,
-            PaymentMethod = PaymentMethod,
-            TransactionId = TransactionId,
-            PaymentStatus = "Pending",
-            CreatedAt = DateTime.UtcNow
-        };
-        db.Payments.Add(payment);
-
-        db.Carts.RemoveRange(cartItems);
-
-        db.SaveChanges();
-
-        TempData["Success"] = "Your order has been successfully placed!";
-        return RedirectToAction("ThankYou", "Home");
-    }
 
     public IActionResult ThankYou()
     {
